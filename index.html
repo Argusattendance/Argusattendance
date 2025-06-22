@@ -38,11 +38,17 @@
   <div class="iframe-container">
     <div class="loader" id="loader">Loading app...</div>
     <iframe 
-      src="https://script.google.com/macros/s/AKfycbx_bLKMgfxqYhJYaIkK55KEfKsRT-gOZCZWIshyp_jQXGKMIQryYT8K6MKeLEk4osOm/exec" 
-      title="Argus Web App"
-      onload="document.getElementById('loader').style.display='none';"
-      allowfullscreen>
+      id="appFrame" 
+      title="Argus Web App" 
+      allowfullscreen 
+      onload="document.getElementById('loader').style.display='none';">
     </iframe>
   </div>
+
+  <script>
+    // Set the iframe source dynamically so it's not visible in the HTML
+    const iframeSrc = "https://script.google.com/macros/s/AKfycbx_bLKMgfxqYhJYaIkK55KEfKsRT-gOZCZWIshyp_jQXGKMIQryYT8K6MKeLEk4osOm/exec";
+    document.getElementById('appFrame').src = iframeSrc;
+  </script>
 </body>
 </html>
