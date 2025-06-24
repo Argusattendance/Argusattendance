@@ -3,27 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Argus</title>
+  <title>ARGUS</title>
 
   <!-- Favicon -->
   <link rel="icon" href="https://argussoftwares.com/wp-content/uploads/2024/09/WITHOUT-BACKGROUND.png" type="image/x-icon">
 
   <!-- SEO Meta Tags -->
-  <meta name="title" content="Argus">
-  <meta name="description" content="Monitor and manage attendance easily with Argus. Trusted by top companies.">
+  <meta name="title" content="ARGUS">
+  <meta name="description" content="Smart Attendance & Workflow Monitoring by Argus Softwares">
 
-  <!-- Open Graph / WhatsApp / Facebook -->
+  <!-- Open Graph (WhatsApp, Facebook) -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://argusattendance.github.io/Argusattendance/">
-  <meta property="og:title" content="Argus">
-  <meta property="og:description" content="Monitor and manage attendance easily with Argus. Trusted by top companies.">
+  <meta property="og:title" content="ARGUS">
+  <meta property="og:description" content="Smart Attendance & Workflow Monitoring by Argus Softwares">
   <meta property="og:image" content="https://argussoftwares.com/wp-content/uploads/2024/09/WITHOUT-BACKGROUND.png">
 
   <!-- Twitter Card / Gmail -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://argusattendance.github.io/Argusattendance/">
-  <meta name="twitter:title" content="Argus">
-  <meta name="twitter:description" content="Monitor and manage attendance easily with Argus. Trusted by top companies.">
+  <meta name="twitter:title" content="ARGUS">
+  <meta name="twitter:description" content="Smart Attendance & Workflow Monitoring by Argus Softwares">
   <meta name="twitter:image" content="https://argussoftwares.com/wp-content/uploads/2024/09/WITHOUT-BACKGROUND.png">
 
   <style>
@@ -37,7 +37,7 @@
     .iframe-container {
       position: relative;
       width: 100%;
-      height: 100vh;
+      height: 100%;
     }
     iframe {
       width: 100%;
@@ -55,6 +55,13 @@
       max-width: 150px;
       height: auto;
     }
+
+    /* Fix for iOS Safari and mobile height */
+    @supports (-webkit-touch-callout: none) {
+      .iframe-container {
+        height: -webkit-fill-available;
+      }
+    }
   </style>
 </head>
 <body>
@@ -63,7 +70,7 @@
       <img src="https://argussoftwares.com/wp-content/uploads/2024/09/WITHOUT-BACKGROUND.png" alt="Loading..." />
     </div>
     <iframe 
-      src="https://script.google.com/macros/s/AKfycbxLkGRQQuIHLG9wb-1OzMFlQlRSuR2pOUOcJnRXF8bbFgTqH1BdqmeueljZhJdBWgnC/exec" 
+      src="https://script.google.com/macros/s/AKfycbxAmVyezCvgTKJQDjFm5F275iL7BT6M_llnE_m8k8ksPFwRrchYuWChDnGOxbjfBEOn/exec" 
       title="Argus Web App"
       onload="document.getElementById('loader').style.display='none';"
       allowfullscreen>
