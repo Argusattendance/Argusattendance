@@ -28,21 +28,25 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      font-size: 1.2rem;
-      color: #666;
       z-index: 10;
+    }
+    .loader img {
+      max-width: 150px;
+      height: auto;
     }
   </style>
 </head>
 <body>
   <div class="iframe-container">
-    <div class="loader" id="loader">Loading app...</div>
+    <div class="loader" id="loader">
+      <img src="https://argussoftwares.com/wp-content/uploads/2024/09/WITHOUT-BACKGROUND.png" alt="Loading..." />
+    </div>
     <iframe 
-      src="https://script.google.com/macros/s/AKfycbxAmVyezCvgTKJQDjFm5F275iL7BT6M_llnE_m8k8ksPFwRrchYuWChDnGOxbjfBEOn/exec" 
+      src="https://script.google.com/macros/s/AKfycbxLkGRQQuIHLG9wb-1OzMFlQlRSuR2pOUOcJnRXF8bbFgTqH1BdqmeueljZhJdBWgnC/exec" 
       title="Argus Web App"
       onload="document.getElementById('loader').style.display='none';"
       allowfullscreen>
     </iframe>
   </div>
 </body>
-</html> 
+</html>
